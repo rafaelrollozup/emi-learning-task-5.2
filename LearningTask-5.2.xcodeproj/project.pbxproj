@@ -13,6 +13,7 @@
 		58DD48C027E0A21D004912C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DD48BE27E0A21D004912C7 /* Main.storyboard */; };
 		58DD48C227E0A21F004912C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58DD48C127E0A21F004912C7 /* Assets.xcassets */; };
 		58DD48C527E0A21F004912C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DD48C327E0A21F004912C7 /* LaunchScreen.storyboard */; };
+		58DD48CE27E0A427004912C7 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48CD27E0A427004912C7 /* Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		58DD48C127E0A21F004912C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58DD48C427E0A21F004912C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58DD48C627E0A21F004912C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DD48CD27E0A427004912C7 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				58DD48C127E0A21F004912C7 /* Assets.xcassets */,
 				58DD48C327E0A21F004912C7 /* LaunchScreen.storyboard */,
 				58DD48C627E0A21F004912C7 /* Info.plist */,
+				58DD48CC27E0A411004912C7 /* Commons */,
 			);
 			path = "LearningTask-5.2";
+			sourceTree = "<group>";
+		};
+		58DD48CC27E0A411004912C7 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				58DD48CD27E0A427004912C7 /* Formatter.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				58DD48BD27E0A21D004912C7 /* ViewController.swift in Sources */,
 				58DD48B927E0A21D004912C7 /* AppDelegate.swift in Sources */,
+				58DD48CE27E0A427004912C7 /* Formatter.swift in Sources */,
 				58DD48BB27E0A21D004912C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
