@@ -16,6 +16,7 @@
 		58DD48CE27E0A427004912C7 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48CD27E0A427004912C7 /* Formatter.swift */; };
 		58DD48D427E0A529004912C7 /* ListaDeDespesasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48D327E0A529004912C7 /* ListaDeDespesasView.swift */; };
 		58DD48D727E0A6B5004912C7 /* RelatorioDeDespesas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48D627E0A6B5004912C7 /* RelatorioDeDespesas.swift */; };
+		58E7353227E4C829003952B7 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7353127E4C829003952B7 /* Converter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		58DD48CD27E0A427004912C7 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		58DD48D327E0A529004912C7 /* ListaDeDespesasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeDespesasView.swift; sourceTree = "<group>"; };
 		58DD48D627E0A6B5004912C7 /* RelatorioDeDespesas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatorioDeDespesas.swift; sourceTree = "<group>"; };
+		58E7353127E4C829003952B7 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				58DD48CD27E0A427004912C7 /* Formatter.swift */,
+				58E7353127E4C829003952B7 /* Converter.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				58DD48D727E0A6B5004912C7 /* RelatorioDeDespesas.swift in Sources */,
 				58DD48BD27E0A21D004912C7 /* ViewController.swift in Sources */,
 				58DD48B927E0A21D004912C7 /* AppDelegate.swift in Sources */,
+				58E7353227E4C829003952B7 /* Converter.swift in Sources */,
 				58DD48D427E0A529004912C7 /* ListaDeDespesasView.swift in Sources */,
 				58DD48CE27E0A427004912C7 /* Formatter.swift in Sources */,
 				58DD48BB27E0A21D004912C7 /* SceneDelegate.swift in Sources */,
