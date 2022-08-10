@@ -1,20 +1,20 @@
+////
+////  RelatorioDeDespesas.swift
+////  LearningTask-5.2
+////
+////  Created by rafael.rollo on 15/03/2022.
+////
 //
-//  RelatorioDeDespesas.swift
-//  LearningTask-5.2
+//import Foundation
 //
-//  Created by rafael.rollo on 15/03/2022.
+//struct Despesas {
+//    private(set) var itens: [Despesa] = []
 //
-
-import Foundation
-
-struct Despesas {
-    private(set) var itens: [Despesa] = []
-    
-    var total: Decimal {
-        return itens.map({ $0.valor }).reduce(0, +)
-    }
-    
-    mutating func adiciona(_ item: Despesa) {
-        itens.append(item)
-    }
-}
+//    var total: Decimal {
+//        return itens.map({ $0.valor }).reduce(0, +)
+//    }
+//
+//    mutating func adiciona(_ item: Despesa) {
+//        itens.append(item)
+//    }
+//}
