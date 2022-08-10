@@ -8,7 +8,7 @@
 import Foundation
 
 struct RelatorioDeDespesas {
-    let dataDeCriacao: Date = .now
+    let dataDeCriacao: Date = Date.now
     private(set) var despesas: Despesas = Despesas()
     private(set) var valorTotal: Decimal = 0
     

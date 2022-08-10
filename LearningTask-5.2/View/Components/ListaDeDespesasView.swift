@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListaDeDespesasView: UIView, UITableViewDelegate, UITableViewDataSource {
+class ListaDeDespesasView: UIView {
     
     // MARK: - Subviews
     private lazy var tableView: UITableView = {
@@ -67,27 +67,30 @@ class ListaDeDespesasView: UIView, UITableViewDelegate, UITableViewDataSource {
         ])
     }
     
-    // MARK: - API pública
+    // MARK: API pública
     func atualiza(_ despesas: Despesas) {
         itens = despesas.itens
     }
     
-    // - MARK: Gestão da tabela
-    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+}
+
+// MARK: - Gestão da tabela
+extension ListaDeDespesasView: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itens.count
     }
     
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ExpenseItemCell.reuseId, for: indexPath) as? ExpenseItemCell else {
             fatalError("Não foi possível carregar a celula")
         }
     
-        cell.setup(item: itens[indexPath.row])
+        cell.despesa = itens[indexPath.row]
         return cell
     }
-    
 }
 
+// MARK: - Implementação da célula
 fileprivate class ExpenseItemCell: UITableViewCell {
     static var reuseId: String {
         return String(describing: self)
@@ -174,9 +177,13 @@ fileprivate class ExpenseItemCell: UITableViewCell {
     }
     
     // MARK: API
-    func setup(item: Despesa) {
-        tituloLabel.text = item.titulo
-        descricaoLabel.text = item.tipo.text
-        valorLabel.text = Formatter.paraMoeda(decimal: item.valor)
+    var despesa: Despesa? {
+        didSet {
+            guard let despesa = despesa else { return }
+
+            tituloLabel.text = despesa.titulo
+            descricaoLabel.text = despesa.tipo.text
+            valorLabel.text = Formatter.paraMoeda(decimal: despesa.valor)
+        }
     }
 }
